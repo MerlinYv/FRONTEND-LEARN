@@ -44,7 +44,7 @@ console.log(arr.sort());
 
 /*
  * 操作方法
- * 1.concat()
- * 2.slice()
+ * 1.concat() 连接两个数组或字符串和数组，返回新数组
+ * 2.slice() 
  * 3.splice() 
  */
