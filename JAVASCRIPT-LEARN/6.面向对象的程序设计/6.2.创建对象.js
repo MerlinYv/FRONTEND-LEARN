@@ -38,3 +38,24 @@ Per.prototype.sayName = function() {
 
 let person3 = new Per();
 console.log(person3.sayName());
+
+// in操作符
+
+//Object.keys() Object.getOwnPropertyNames() = for...in 循环
+
+// 4.原型模式
+
+// 5.寄生构造函数模式
+
+// 6.稳妥构造函数模式
+function person4(name) {
+    var o = new Object();
+    o.name = this.name;
+    o.sayName = () => {
+        console.log(name);
+    }
+    return o;
+}
+
+let friend = person4('jack');
+console.log(friend.sayName(), friend.name);
